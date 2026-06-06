@@ -66,7 +66,7 @@ These build on Shelfmark's existing request and download systems; with all of th
 
 1. Download the [docker-compose file](compose/docker-compose.yml):
    ```bash
-   curl -O https://raw.githubusercontent.com/calibrain/shelfmark/main/compose/docker-compose.yml
+   curl -O https://raw.githubusercontent.com/InfiniteAvenger/shelfmark/main/compose/docker-compose.yml
    ```
 
 2. Start the service:
@@ -148,7 +148,7 @@ The full-featured image with all network capabilities included.
 #### Tor Routing
 Optional Tor support for network privacy:
 ```bash
-curl -O https://raw.githubusercontent.com/calibrain/shelfmark/main/compose/docker-compose.tor.yml
+curl -O https://raw.githubusercontent.com/InfiniteAvenger/shelfmark/main/compose/docker-compose.tor.yml
 docker compose -f docker-compose.tor.yml up -d
 ```
 
@@ -166,7 +166,7 @@ A lighter image without the built-in browser automation. Ideal for:
 - **Audiobooks** - Using Shelfmark primarily for audiobooks
 
 ```bash
-curl -O https://raw.githubusercontent.com/calibrain/shelfmark/main/compose/docker-compose.lite.yml
+curl -O https://raw.githubusercontent.com/InfiniteAvenger/shelfmark/main/compose/docker-compose.lite.yml
 docker compose -f docker-compose.lite.yml up -d
 ```
 
