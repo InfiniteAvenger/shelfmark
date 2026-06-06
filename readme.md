@@ -37,6 +37,9 @@ This fork adds an optional automation pipeline on top of upstream Shelfmark, con
 - **Automatic Downloads** - Auto-approve and download synced books, selecting the best release from a **drag-to-reorder source priority** list. A strict title/author/audiobook-format (and seeder) match guard avoids grabbing the wrong file; anything without a confident match is left as a pending request for manual review.
 - **Library-Aware De-duplication** - Check your [Audiobookshelf](https://github.com/advplyr/audiobookshelf) library before adding or downloading a book and skip anything you already own. Fails open (proceeds) if Audiobookshelf is unreachable, so the pipeline never stalls.
 
+> [!TIP]
+> **Designed to pair with [ShelfBridge](https://github.com/rohit-purandare/ShelfBridge).** ShelfBridge syncs your Audiobookshelf *listening progress* **up to** Hardcover; this fork closes the loop in the other direction — pulling your Hardcover "Want to Read" shelf **down into** your library and skipping anything you already own. Run both and Hardcover becomes a single hub: mark a book "Want to Read" and it lands in your library automatically; finish listening and your Hardcover status updates on its own.
+
 These build on Shelfmark's existing request and download systems; with all of them disabled, the app behaves exactly like upstream.
 
 ## 🖼️ Screenshots
